@@ -1,5 +1,56 @@
 {%extends 'base.html'%}
+{%import 'macros.html' as macro%}
+
 
 {% block content %}
-    <h4>Home</h4>
+
+
+    
+
+
+
+
+<div class="container">
+    <div class="row">
+        <nav class="navbar navbar-light bg-light">
+                <a class="navbar-brand">
+                News Hub
+                </a>
+                
+            
+            
+            
+        </nav>
+    </div>
+    <div class="row">
+       <div class="jumbotron text-center">
+           <p>Here is the news bit for today</p>
+       </div>
+    </div>
+    <div class="row overlay">
+        <div class="">
+            <div class="col-md-2 left text-center">
+                <h3 class="h">Sources</h3>
+                <a href="#" class="list-item">The Guardian</a>
+                
+                <a href="#" class="list-item">The Daily Mail</a>
+                <a href="#" class="list-item">The New York Times</a>
+                <a href="#" class="list-item">The Telegraph</a>
+                <a href="#" class="list-item">Sky News</a>
+                
+            </div>
+            <div class="col-md-10 right">
+                <h3>News highlights</h3>
+                {% if news %}
+                    {{macro.displayNewsHighlights(news)}}
+                {%else%}
+                    <div class="row">
+                        <p>No news by that country</p>
+                    </div>
+                {%endif%}
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- <script src="{{url_for('static', filename='js/bootstrap.js')}}"></script> -->
 {% endblock %}
