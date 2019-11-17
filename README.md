@@ -2,10 +2,10 @@
  News Articles
 
 ## Brief description of website.
-The project is a python command line application for storage and retrieval of account credentials.
+The project is a python-based application for retrieving and displaying news from various news sources.
 
 ## Main contributors
-- [Eric Gichimu] [https://github.com/Gichimu]
+- [Eric Gichimu](https://github.com/Gichimu)
 
 
 ## About the author
@@ -22,16 +22,18 @@ The application requires to be ran on a terminal. It is a prompt-based applicati
   their own password or have it selected for them. If they select N for no, a random password is selected for them.
 
 ## Dependencies
-The application has 2 dependencies: Pyperclip and Random. 
+The application has 2 dependencies: Jinja2 and Werkzeug. 
  
 ## Languages
 The application is written in American english.
 
 ## Setup/Installation Requirements
-No setups and installations required. The application just needs to be ran on a terminal.
+No setups and installations required. The application will run on any web browser.
 
 ## Technologies Used
 * The python language
+* flask python framework
+
 
 
 ## Support and contact details
@@ -42,4 +44,4 @@ No setups and installations required. The application just needs to be ran on a 
 
  
  ## License
-This project is licensed under the MIT License - see the LICENSE.md[https://github.com/Gichimu/news-articles/blob/master/LICENCE.md] file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/Gichimu/news-articles/blob/master/LICENCE.md) file for details
