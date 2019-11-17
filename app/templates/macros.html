@@ -1,0 +1,11 @@
+{% macro displayNewsHighlights(news) %}
+    {% for item in news %}
+        <div class="row">
+            <h5><b>{{item.title}}</b></h5>
+            <p>{{item.description}}</p>
+            <hr>
+            <p>Source: <small>{{item.source}}</small></p>
+            <p>Date published: <small>{{item.published_at}}</small></p>
+        </div>
+    {%endfor%}
+{%endmacro%}
