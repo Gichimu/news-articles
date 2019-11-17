@@ -1,0 +1,63 @@
+
+
+body {
+    font-family: 'Montserrat', serif;
+    background-image: url("https://wallpaperaccess.com/full/107818.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.jumbotron {
+    color: black;
+    font-size: 2em;
+}
+
+.navbar a {
+    font-size: 3em;
+    color: aquamarine;
+}
+
+.well {
+    width: 50%;
+}
+
+.left, .right {
+    color: white;
+    padding: 10px;
+}
+
+.right {
+    border-left: 1px solid silver;
+    padding-left: 20px;
+}
+
+.divider {
+    color: silver;
+}
+
+
+.left a {
+    display: block;
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.left a:hover {
+    color: aquamarine;
+    font-size: 1.5em;
+}
+
+
+
+.overlay {
+  position: absolute;
+  top: auto;
+  left: auto;
+  width: 64%;
+  height: auto;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.5);
+}
