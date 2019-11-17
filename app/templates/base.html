@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    {%block styles%}
+        {{ super()}}   
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+    {% endblock %}
     {% if title %}
         <title>{{title}}</title>
     {%else%}
@@ -12,13 +18,12 @@
     {% endif %}
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            {% block content%}
+    
+    {% block content%}
 
-            {% endblock %}
-        </div>
-    </div>
+    {% endblock %}
+    
+    <!-- <script src="{{url_for('static', filename='js/bootstrap.js')}}"></script> -->
     
 </body>
 </html>

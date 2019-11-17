@@ -27,27 +27,37 @@
            <p>Here is the news bit for today</p>
        </div>
     </div>
-    <div class="row overlay">
+    <div class="row overlay main-content">
         <div class="">
-            <div class="col-md-2 left text-center">
+            <div class="col-md-2 left text-center sticky-top">
                 <h3 class="h">Sources</h3>
-                <a href="#" class="list-item">The Guardian</a>
-                
-                <a href="#" class="list-item">The Daily Mail</a>
-                <a href="#" class="list-item">The New York Times</a>
-                <a href="#" class="list-item">The Telegraph</a>
-                <a href="#" class="list-item">Sky News</a>
-                
+                <div class="content">
+                    <a href="/sources/the-washington-post" class="list-item">The Washington Post</a>
+                    
+                    <a href="/sources/cbs-news" class="list-item">CBS News</a>
+                    <a href="/sources/cnn" class="list-item">CNN</a>
+                    <a href="/sources/bbc-news" class="list-item">BBC News</a>
+                    <a href="/sources/al-jazeera-english" class="list-item">Al-Jazeera</a>
+                    <a href="/sources/fox-news" class="list-item">Fox News</a>
+                </div>
             </div>
-            <div class="col-md-10 right">
-                <h3>News highlights</h3>
-                {% if news %}
-                    {{macro.displayNewsHighlights(news)}}
-                {%else%}
-                    <div class="row">
-                        <p>No news by that country</p>
+            <div class="col-md-10">
+                <div class="right">
+                    <h3>News highlights</h3>
+                    <div class="content">
+                        {% if news %}
+                            {{macro.displayNewsHighlights(news)}}
+                        {%else%}
+                            <div class="row">
+                                <p>No news by that country</p>
+                            </div>
+                        {%endif%}
                     </div>
-                {%endif%}
+                </div>
+                <!-- <span class="links">
+                    <a href="">Prev<<</a>|
+                    <a class="pull-right" href="">Next>></a>
+                </span> -->
             </div>
         </div>
     </div>

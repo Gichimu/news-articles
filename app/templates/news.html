@@ -1,0 +1,20 @@
+{%extends 'base.html'%}
+{%import 'macros.html' as macro%}
+
+{%block content%}
+<div class="container">
+    <div class="row news overlay">
+        {%if news%}
+            {{macro.displayNews(news)}}
+        {%else%}
+            <p>No news from that source</p>
+        {%endif%}
+        <!-- {% if prev %}
+        <div class="prev">Prev<-</div>
+        {%endif%}
+        {% if next %}
+        <div class="next pull-right">Next-></div>
+        {% endif %} -->
+    </div>
+</div>
+{%endblock%}
