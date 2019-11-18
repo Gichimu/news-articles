@@ -8,9 +8,11 @@ def create_app(config_name):
 
     app = Flask(__name__)
 
+    #setting up configurations
     app.config.from_object(config_options[config_name])
     config_options[config_name].init_app(app)
 
+    #initializing flask extension
     bootstrap.init_app(app)
 
 
