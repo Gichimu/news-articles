@@ -13,13 +13,15 @@ The author is a moringa core student studying software development.
 
 ## BDD
 (Behavior Driven Development)
-The application requires to be ran on a terminal. It is a prompt-based application.
-* The user needs to first create an account by selecting R for registering.
-* The details are then saved and he/she is redirected to the login and required to enter the username and password previously created.
-* On successful login, the user is prompted to select a pair of letters denoting the action he/she wishes to proceed with.
-* On entering these, the user follows the prompts for the particular action he/she decides to take.
-* For instance, on selecting CC to create a credential, the user is asked whether he/she prefers to select
-  their own password or have it selected for them. If they select N for no, a random password is selected for them.
+The application requires to be ran on a web browser by following the link given below. 
+* When a user first lands on the site, he/she encounters a list of news sources on the left pane and a list of the top
+news stories of the day.
+* When a user clicks on any of the news sources, he/she is directed to a page with a list of news from that news source.
+The user can then select any of the news and view the full details of the news item as well as a button to redirect him to 
+the website where the news is hosted.
+* If a user selects any of the news items on the landing page, he/she is directed to a page with that particular news item
+and can view the title, description, source and time the item was created. He/she can then click on the button provided to
+view the news item from the source website.
 
 ## Dependencies
 The application has 2 dependencies: Jinja2 and Werkzeug. 
