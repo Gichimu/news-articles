@@ -10,7 +10,7 @@
                 <h4><b>{{item.title}}</b></h4>
                 <p>{{item.description}}</p>
                 <p>Source: <small>{{item.source['name']}}</small></p>
-                <p>Date published: <small>{{item.date}}</small></p>
+                <p>Date published: <small>{{item.date_published | truncate(11, True, end='.')}}</small></p>
                 <hr>
             {%endif%}
         </a>
@@ -30,7 +30,7 @@
                 <h4><b>{{itm.title}}</b></h4>
                 <p>{{itm.description}}</p>
                 <p>Source: <small>{{itm.source['name']}}</small></p>
-                <p>Date published: <small>{{itm.date}}</small></p>
+                <p>Date published: <small>{{itm.date_published | truncate(11, True, end='.')}}</small></p>
                 <hr>
             {%endif%}
         </a>

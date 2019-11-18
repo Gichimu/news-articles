@@ -56,11 +56,8 @@ def process_results(news_list):
         image_url = item.get('urlToImage')
         story_url = item.get('url')
         published_at = item.get('publishedAt')
-
-        dateStr = published_at.split('T')
-        date = dateStr[0]
         
-        news_object = News(id, source, title, description, image_url, story_url, date)
+        news_object = News(id, source, title, description, image_url, story_url, published_at)
 
         news.append(news_object)
         news_count +=1
