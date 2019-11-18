@@ -1,12 +1,19 @@
 import urllib.request, json
-from datetime import datetime
-from app import app
-from .models import news
-News = news.News
+# from . import app
+from .models import News
 
-api_key = app.config['NEWS_API_KEY']
-base_url1 = app.config['NEWS_API_BASE_URL1']
-base_url2 = app.config['NEWS_API_BASE_URL2']
+#api key
+api_key = None
+
+#getting the base urls
+base_url1 = None
+base_url2 = None
+
+def configure_request(app):
+    global api_key, base_url1, base_url2
+    api_key = app.config['NEWS_API_KEY']
+    base_url1 = app.config['NEWS_API_BASE_URL1']
+    base_url2 = app.config['NEWS_API_BASE_URL2']
 
 def get_news_by_country(country):
     '''
